@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdb03106e41db8b4ebfbf2a33d746944, type: 3}
   m_Name: Erasers
   m_EditorClassIdentifier: 
-  AbilityName: EraserGun
-  AbilityDiscription: Tries To Erase The Enemy
-  AbilityArt: {fileID: 7767216839115468140, guid: 4be8662b064d3af458fd3ba64db01958, type: 3}
-  AbilityDamage: 1
+  _abilityName: Eraser
+  _abilityDiscription: Erases THe Enemy
+  _isUnderCooldown: 0
+  _abilityDamage: 9.9
+  _abilityCooldown: 0
