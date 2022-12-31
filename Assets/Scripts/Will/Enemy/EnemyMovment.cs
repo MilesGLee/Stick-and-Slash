@@ -1,18 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.AI;
 using UnityEngine;
 
+
+[RequireComponent(typeof(NavMeshAgent)),RequireComponent(typeof(Rigidbody))]
 public class EnemyMovment : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private NavMeshAgent agent;
 
+    [SerializeField]
+    private Transform player;
     // Update is called once per frame
     void Update()
     {
-        
+        agent.SetDestination(player.position);
     }
 }

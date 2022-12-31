@@ -21,10 +21,19 @@ public class AttackStats : ScriptableObject
     [Tooltip("Cooldown after use"), SerializeField]
     private float _abilityCooldown = 0.0f;
 
+    //Alows classes to access the values of the ability name 
     public string AbilityName { get => _abilityName; }
+
+    //Alows classes to access the values of the ability discription
     public string AbilityDiscription { get => _abilityDiscription; }
+
+    //Alows classes to access the values as well as augmenting it of the ability under cooldown  
     public bool IsUnderCooldown { get => _isUnderCooldown; set => _isUnderCooldown = value; }
+
+    //Alows classes to access the values of the ability damage 
     public float AbilityDamage { get => _abilityDamage; }
+
+    //Alows classes to access the values of the ability coooldown 
     public float AbilityCooldown { get => _abilityCooldown; }
 
 }
